@@ -17,4 +17,7 @@ $ npm run start
 $ npm run generate
 ```
 
+## Project URL
+https://test-article.netlify.app/
+
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).
