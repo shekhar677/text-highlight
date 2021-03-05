@@ -21,7 +21,6 @@ export default {
 </script>
 
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Tinos:wght@400;700&display=swap');
 
 html {
   font-family: 'Tinos', serif;
