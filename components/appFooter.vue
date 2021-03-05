@@ -5,7 +5,9 @@
       <a href="#" class="text-white text-sm capitalize mx-3">About</a>
     </div>
     <div>
-      <div class="capitalize text-xl md:text-2xl text-white font-bold">HSD</div>
+      <div class="capitalize text-xl md:text-2xl text-white font-bold">
+        <a href="#">HSD</a>
+      </div>
     </div>
     <div>
       <a href="#" class="text-white text-sm capitalize mx-3">Help</a>
