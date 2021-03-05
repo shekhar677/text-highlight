@@ -5,6 +5,9 @@ module.exports = {
   },
   purge: [],
   theme: {
+    fontFamily: {
+      'tinos': ['Tinos'],
+    },
     extend: {
       colors: {
         'bg-gray': '#E5E5E5',
