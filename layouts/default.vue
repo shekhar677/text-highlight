@@ -1,5 +1,5 @@
 <template>
-  <div class="max-w-screen-2xl mx-auto">
+  <div class="max-w-screen-2xl mx-auto font-tinos">
     <app-header/>
     <div class="bg-bg-gray min-h-screen">
       <Nuxt />
