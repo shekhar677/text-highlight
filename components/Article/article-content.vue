@@ -10,8 +10,8 @@
         <p class="my-4">My experience with Safari is very smooth, as I don’t need to worry about plugging my MacBook oftenly. Checking emails, social media, watching YouTube and writing stories in Medium did not affect my battery significantly. Plus, I also get better security with Safari with its latest tracking prevention update.</p>
         <p class="my-4">Last time when I use Safari in Catalina, YouTube only capable of showing 1080p videos at its max resolution. Now, the new update allows Safari to view up to 4k HDR content, which makes me happier. It means that I can continue using Safari to watch high-quality videos.</p>
       </div>
+      <hightlight />
     </div>
-    <hightlight />
   </div>
 </template>
 

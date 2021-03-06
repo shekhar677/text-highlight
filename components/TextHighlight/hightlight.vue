@@ -10,7 +10,7 @@ export default {
       popupInitialTopOffset: 0,
       popupInitialLeftOffset: 0,
       offsetTop: 0,
-      offsetLeft: "0em",
+      offsetLeft: "-999em",
       selectedText: undefined,
       selected: false,
     };
@@ -29,13 +29,13 @@ export default {
               let left = rect.left + (rect.right - rect.left) / 2;
               let top = rect.top;
 
-              this.offsetTop = top - this.popupInitialTopOffset - 55 + "px";
+              this.offsetTop = top - this.popupInitialTopOffset - 55 + window.pageYOffset + "px";
 
               this.offsetLeft = left - 40 - this.popupInitialLeftOffset / 2 + "px";
             }
           }
         } else {
-          this.offsetLeft = "0em";
+          this.offsetLeft = "-999em";
           this.selected = false;
         }
       }, 0);
@@ -46,6 +46,7 @@ export default {
   },
   mounted() {
     this.popupInitialTopOffset = this.$refs.popup.offsetHeight;
+    console.log(this.$refs.popup.offsetHeight)
     this.popupInitialLeftOffset = this.$refs.popup.offsetWidth;
     window.addEventListener("mouseup", this.ListenToDocumentSelection);
   },
