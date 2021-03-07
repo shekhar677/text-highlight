@@ -4,6 +4,15 @@ body {
   font-family: 'Tinos';
 }
 
+::-moz-selection {
+  background: #E2D4FF;
+}
+
+::selection {
+  background: #E2D4FF;
+  color: black;
+}
+
 .page-enter-active,
 .page-leave-active {
   transition: opacity 0.5s;
