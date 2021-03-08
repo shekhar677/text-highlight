@@ -1,5 +1,16 @@
 # test-app
 
+## Project URL
+https://test-article.netlify.app/
+
+## Description
+```
+Selecting the text will show a popup with "pencil" icon, after clicking on icon it will show an alert with selected text.
+```
+
+## Screenshot
+![Screenshot](static/screen.png "Test App")
+
 ## Build Setup
 
 ```bash
@@ -17,7 +28,5 @@ $ npm run start
 $ npm run generate
 ```
 
-## Project URL
-https://test-article.netlify.app/
 
 For detailed explanation on how things work, check out [Nuxt.js docs](https://nuxtjs.org).

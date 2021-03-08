@@ -16,29 +16,32 @@ export default {
     };
   },
   methods: {
-    ListenToDocumentSelection() {
-      let sel = window.getSelection();
-      setTimeout(_ => {
-        if (sel && !sel.isCollapsed) {
-          this.selected = true;
-          this.selectedText = sel.toString();
-          if (sel.rangeCount) {
-            let range = sel.getRangeAt(0).cloneRange();
-            if (range.getBoundingClientRect) {
-              var rect = range.getBoundingClientRect();
-              let left = rect.left + (rect.right - rect.left) / 2;
-              let top = rect.top;
-
-              this.offsetTop = top - this.popupInitialTopOffset - 55 + window.pageYOffset + "px";
-
-              this.offsetLeft = left - 23 - this.popupInitialLeftOffset / 2 + "px";
+    ListenToDocumentSelection(e) {
+      const container = document.querySelector('#content');
+      if (container.contains(e.target)) {
+        let sel = window.getSelection();
+        setTimeout(_ => {
+          if (sel && !sel.isCollapsed) {
+            this.selected = true;
+            this.selectedText = sel.toString();
+            if (sel.rangeCount) {
+              let range = sel.getRangeAt(0).cloneRange();
+              if (range.getBoundingClientRect) {
+                var rect = range.getBoundingClientRect();
+                let left = rect.left + (rect.right - rect.left) / 2;
+                let top = rect.top;
+  
+                this.offsetTop = top - this.popupInitialTopOffset - 55 + window.pageYOffset + "px";
+  
+                this.offsetLeft = left - 23 - this.popupInitialLeftOffset / 2 + "px";
+              }
             }
+          } else {
+            this.offsetLeft = "-999em";
+            this.selected = false;
           }
-        } else {
-          this.offsetLeft = "-999em";
-          this.selected = false;
-        }
-      }, 0);
+        }, 0);
+      }
     },
     AlertSelectedText() {
       alert(`"${this.selectedText}" selected`);
