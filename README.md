@@ -1,7 +1,7 @@
-# test-app
+# Medium like text highlight
 
 ## Project URL
-https://test-article.netlify.app/
+https://medium-text-highlight.netlify.app/
 
 ## Description
 ```
@@ -9,7 +9,7 @@ Selecting the text will show a popup with "pencil" icon, after clicking on icon 
 ```
 
 ## Screenshot
-![Screenshot](static/screen.png "Test App")
+![Screenshot](static/screen.png "Text Highlight")
 
 ## Build Setup
 
