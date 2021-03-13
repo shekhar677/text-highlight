@@ -9,7 +9,7 @@ Selecting the text will show a popup with "pencil" icon, after clicking on icon 
 ```
 
 ## Screenshot
-![Screenshot](screen.png "Text Highlight")
+![Screenshot](static/screen.PNG "Text Highlight")
 
 ## Build Setup
 
